@@ -28,4 +28,5 @@ git push origin nomor-versi # harus diawali dengan v. contoh: git push origin v1
 go get
 
 # Jika melakukan perubahan jangan push dengan menggunakan tag (versi) yang sama, harus menggunakan tag baru (nomor versi baru) sekecil apapun perubahannya
-# Saat melakukan major changes, idealnya nama module-nya diubah. Biasanya cukup tambahkan "v2", "v3", dst di belakang nama module-nya. Contoh: github.com/chaerulmarwan20/go-say-hello/v2. Kemudian buat tag yang sesuai dengan nomor versi terbarunya. Contoh: v2.0.0, v3.0.0, dst
+# Saat melakukan major changes, idealnya nama module-nya diubah. Biasanya cukup tambahkan "v2", "v3", dst di belakang nama module-nya. Contoh: github.com/chaerulmarwan20/go-say-hello/v2. Kemudian buat tag yang sesuai dengan nomor versi terbarunya. Contoh: v2.0.0, v3.0.0, dst. Kemudian push tag tersebut
+# Jika sudah menggunakan module dengan versi v2, v3, dst, maka saat menambahkan module tersebut ke project lain, harus menghapus module versi lama dari file go.mod dan menambahkan nama module beserta versi terbarunya dengan perintah: go get github.com/chaerulmarwan20/go-say-hello/v2
